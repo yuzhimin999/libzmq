@@ -54,17 +54,18 @@ cmake ..
 make -j4
 ```
 # run demo 
-
+```
+## 终端1
 /Client 
 Connect to server success...
 Type:client	IP:192.168.1.100	Port:5555
 Type:server	IP:192.168.1.100	Port:5555
 Type:client	IP:192.168.1.100	Port:5555
 
-
+## 终端2
 ./Server 
 Type:client	IP:192.168.1.100	Port:5555
 Type:server	IP:192.168.1.100	Port:5555
 Type:client	IP:192.168.1.100	Port:5555
 Type:server	IP:192.168.1.100	Port:5555
-
+```
