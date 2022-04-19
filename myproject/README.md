@@ -56,7 +56,7 @@ make -j4
 # run demo 
 ```
 ## 终端1
-/Client 
+./Client 
 Connect to server success...
 Type:client	IP:192.168.1.100	Port:5555
 Type:server	IP:192.168.1.100	Port:5555
@@ -71,8 +71,10 @@ Type:server	IP:192.168.1.100	Port:5555
 ```
 
 # python demo
+```
 cd python_demo
 protoc ./protocolbufTest.proto  --python_out=./
 
-终端执行命令
+# 终端执行命令,可以做为服务端 ,与 C++ 的Client交互。
 python3 protobuf_zmq_demo.py
+```
