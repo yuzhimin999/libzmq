@@ -69,3 +69,10 @@ Type:server	IP:192.168.1.100	Port:5555
 Type:client	IP:192.168.1.100	Port:5555
 Type:server	IP:192.168.1.100	Port:5555
 ```
+
+# python demo
+cd python_demo
+protoc ./protocolbufTest.proto  --python_out=./
+
+终端执行命令
+python3 protobuf_zmq_demo.py

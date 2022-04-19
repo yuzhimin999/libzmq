@@ -1,0 +1,8 @@
+//protocolbufTest.proto
+syntax = 'proto3';
+package protocolbufTest.protobuf;
+message Information {
+	string ip = 1;
+	int32 port = 2;
+	string type = 3;
+}
