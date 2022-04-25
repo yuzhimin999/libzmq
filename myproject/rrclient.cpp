@@ -19,6 +19,7 @@ int main()
     // 2.创建套接字、连接代理的ROUTER端
     void *requester = zmq_socket(context, ZMQ_REQ);
     rc = zmq_connect(requester, "tcp://localhost:5559");
+    // rc = zmq_bind(requester,"ipc://client.ipc");
     if(rc == -1)
     {
         perror("zmq_connect");

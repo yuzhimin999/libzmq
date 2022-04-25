@@ -1,8 +1,8 @@
 //protocolbufTest.proto
-syntax = 'proto2';
+syntax = 'proto3';
 package protocolbufTest.protobuf;
 message Information {
-	required string ip = 1;
-	required int32 port = 2;
-	required string type = 3; 
+	string ip = 1;
+	int32 port = 2;
+	string type = 3;
 }

@@ -20,6 +20,7 @@ int main()
     // 2.创建套接字、连接代理的DEALER端
     void *responder = zmq_socket(context, ZMQ_REP);
     rc = zmq_connect(responder, "tcp://localhost:5560");
+    // rc = zmq_bind(responder,"ipc://worker.ipc");
     if(rc == -1)
     {
         perror("zmq_connect");

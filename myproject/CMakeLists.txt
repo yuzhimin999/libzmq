@@ -62,9 +62,16 @@ target_link_libraries(broker_broker PkgConfig::ZeroMQ)
 add_executable(broker_worker ${BROKER_WORKER_LIST})
 target_link_libraries(broker_worker PkgConfig::ZeroMQ)
 ###
+
+### pub/sub
+
+SET(PUBLISH_SEVER_LIST wuserver.cpp)
+SET(SUBSCRIBE_CLIENT_LIST wuclient.cpp)
+
+add_executable(pub_server ${PUBLISH_SEVER_LIST})
+target_link_libraries(pub_server PkgConfig::ZeroMQ)
+
+add_executable(sub_client ${SUBSCRIBE_CLIENT_LIST})
+target_link_libraries(sub_client PkgConfig::ZeroMQ)
 #target_include_directories(${PROJECT_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>/)
-
-
-
-
 # target_link_libraries(hello-world message-static)
