@@ -8,7 +8,6 @@ mkdir cmake-build && cd cmake-build
 cmake .. && make -j4
 sudo apt  install cmake
 cmake .. && make -j4
-make test && make install && sudo ldconfig
 sudo make test && sudo make install && sudo ldconfig
 ```
 
